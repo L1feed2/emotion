@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon.eot');
+  src:  url('../../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf') format('truetype'),
+    url('../../fonts/icomoon.woff') format('woff'),
+    url('../../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-carnival:before {
+  content: "\e900";
+}
+.icon-check:before {
+  content: "\e901";
+}
+.icon-envelope:before {
+  content: "\e902";
+}
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-heart:before {
+  content: "\e904";
+}
+.icon-image:before {
+  content: "\e905";
+}
+.icon-internet:before {
+  content: "\e906";
+}
+.icon-telegram:before {
+  content: "\e907";
+  color: #000;
+}
+.icon-vk:before {
+  content: "\e908";
+}
+.icon-wallet:before {
+  content: "\e909";
+}
+.icon-whatsapp:before {
+  content: "\e90a";
+}
+.icon-triangle-right:before {
+  content: "\e90b";
+}
+.icon-phone:before {
+  content: "\e942";
+}
