@@ -36,6 +36,41 @@ moment(config);
 
 // слфйдер
 $('.slider__body').slick({
-  centerMode: true,
   slidesToShow: 5,
-})
+  rtl: false,
+  slidesToScroll: 2,
+  // infinite: true,
+  centerMode: true,
+  variableWidth: true,
+  infinite: true,
+  focusOnSelect: true,
+  // touchMove: true,
+  nextArrow: '<div class="slider__arrow slider__next"><span class="icon-triangle-right"></span></div>',
+  prevArrow: '<div class="slider__arrow slider__prev"><span class="icon-triangle-right"></span></div>',
+  responsive: [
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 550,
+      settings: {
+        slidesToShow: 1,
+        appendArrows: '.slider__arrows',
+        animationSpeed: 1000
+      }
+    }
+  ]
+});
+// function slickPause() {
+// 	   $('.slider__body').slick('slickPause');
+// }
+// slickPause();
+// $('.slider__body').mouseover(function() {
+// 	   $('.slider__body').slick('slickPlay')
+// });
+// $('.slider__body').mouseout(function() {
+// 	   slickPause();
+// });
