@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/css/fonts.css">
     <link rel="stylesheet" href="./styles/css/style.css">
     <link rel="stylesheet" href="./styles/css/slick.css">
+    <link rel="stylesheet" href="./styles/css/soon.min.css">
     <link rel="stylesheet" href="./styles/css/index.css">
     <link rel="stylesheet" href="./styles/css/media.css">
 
@@ -272,26 +273,24 @@
 
                     <div class="banner__timer">
 
-                        <div class="clock">
-                            <div class="column days">
-                                <div class="timer" id="days"></div>
-                                <div class="text">DAYS</div>
-                            </div>
-                            <div class="timer days">:</div>
-                            <div class="column">
-                                <div class="timer" id="hours"></div>
-                                <div class="text">HOURS</div>
-                            </div>
-                            <div class="timer">:</div>
-                            <div class="column">
-                                <div class="timer" id="minutes"></div>
-                                <div class="text">MINUTES</div>
-                            </div>
-                            <div class="timer">:</div>
-                            <div class="column">
-                                <div class="timer" id="seconds"></div>
-                                <div class="text">SECONDS</div>
-                            </div>
+                        <div class="soon" id="my-soon-counter"
+                        data-due="2020-09-30T00:00:00"
+                        data-layout="inline label-uppercase label-small"
+                        data-scale-max="m"
+                        data-format="d,h,m,s"
+                        data-face="slot"
+                        data-visual="ring cap-round progressgradient-ffffff_ffffff ring-width-custom gap-0"
+                        data-labels-days="Дни,Дней"
+                        data-labels-hours="Часы,Часов"
+                        data-labels-minutes="Минуты,Минут"
+                        data-labels-seconds="Секунды,Секунд">
+                        </div>
+
+                        <div class="banner__timer-labels">
+                            <span class="banner__timer-label">Дни</span>
+                            <span class="banner__timer-label">Часы</span>
+                            <span class="banner__timer-label">Минуты</span>
+                            <span class="banner__timer-label">Дни</span>
                         </div>
 
                     </div>
@@ -680,8 +679,7 @@
 
 
     <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/moment.js"></script>
-    <script src="./js/moment-with-locales.js"></script>
+    <script src="./js/soon.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
